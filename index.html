@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🚀 Lanzamiento Especial | M&N Refrigeración - 30% OFF</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 50%, #7e8ba3 100%);
+            min-height: 100vh;
+        }
+
+        /* Banner de lanzamiento */
+        .launch-banner {
+            background: linear-gradient(90deg, #ff6b6b 0%, #ffa500 50%, #ff6b6b 100%);
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            font-weight: bold;
+            font-size: 1.2rem;
+            animation: pulse 2s infinite;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .launch-banner::before {
+            content: "🔥";
+            position: absolute;
+            left: 20px;
+            animation: flame 1s infinite alternate;
+        }
+
+        .launch-banner::after {
+            content: "🔥";
+            position: absolute;
+            right: 20px;
+            animation: flame 1s infinite alternate;
+        }
+
+        @keyframes pulse {
+            0%, 100% { background: linear-gradient(90deg, #ff6b6b 0%, #ffa500 50%, #ff6b6b 100%); }
+            50% { background: linear-gradient(90deg, #ff8e8e 0%, #ffbf00 50%, #ff8e8e 100%); }
+        }
+
+        @keyframes flame {
+            0% { transform: scale(1); }
+            100% { transform: scale(1.2); }
+        }
+
+        header {
+            background: rgba(0, 0, 0, 0.9);
+            padding: 2rem 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            position: relative;
+        }
+
+        .logo-container {
+            margin-bottom: 1rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .logo-container img {
+            max-width: 280px;
+            height: auto;
+            border-radius: 50%;
+            box-shadow: 0 0 40px rgba(255, 165, 0, 0.6), 0 0 80px rgba(255, 107, 107, 0.4);
+            border: 5px solid rgba(255, 165, 0, 0.5);
+            transition: all 0.4s ease;
+            animation: glow 3s infinite alternate;
+        }
+
+        @keyframes glow {
+            0% { box-shadow: 0 0 40px rgba(255, 165, 0, 0.6), 0 0 80px rgba(255, 107, 107, 0.4); }
+            100% { box-shadow: 0 0 60px rgba(255, 165, 0, 0.9), 0 0 100px rgba(255, 107, 107, 0.6); }
+        }
+
+        .logo-container img:hover {
+            transform: scale(1.08) rotate(2deg);
+        }
+
+        .new-badge {
+            position: absolute;
+            top: -10px;
+            right: calc(50% - 140px);
+            background: #ff0000;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: 0.9rem;
+            animation: bounce 1s infinite;
+            z-index: 10;
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        h1 {
+            color: #fff;
+            font-size: 2.8rem;
+            margin-bottom: 0.5rem;
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+            background: linear-gradient(90deg, #ffa500, #fff, #ffa500);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .tagline {
+            color: #ffa500;
+            font-size: 1.4rem;
+            font-style: italic;
+            font-weight: bold;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+
+        /* Sección de oferta especial */
+        .offer-section {
+            background: linear-gradient(135deg, #ff6b6b 0%, #ffa500 100%);
+            border-radius: 20px;
+            padding: 3rem 2rem;
+            margin-bottom: 2rem;
+            text-align: center;
+            color: white;
+            box-shadow: 0 10px 30px rgba(255, 107, 107, 0.4);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .offer-section::before {
+            content: "★";
+            position: absolute;
+            font-size: 20rem;
+            opacity: 0.1;
+            top: -50px;
+            left: -50px;
+            animation: rotate 20s linear infinite;
+        }
+
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        .offer-title {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .discount {
+            font-size: 5rem;
+            font-weight: bold;
+            display: block;
+            margin: 1rem 0;
+            text-shadow: 3px 3px 6px rgba(0,0,0,0.4);
+            animation: scale 1.5s infinite;
+        }
+
+        @keyframes scale {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+        }
+
+        .offer-details {
+            font-size: 1.3rem;
+            margin: 1.5rem 0;
+            background: rgba(255,255,255,0.2);
+            padding: 1rem;
+            border-radius: 10px;
+        }
+
+        .countdown {
+            background: rgba(0,0,0,0.3);
+            padding: 1.5rem;
+            border-radius: 15px;
+            margin-top: 1.5rem;
+            font-size: 1.5rem;
+        }
+
+        .countdown-timer {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #fff700;
+            margin-top: 0.5rem;
+        }
+
+        .content-section {
+            background: rgba(255, 255, 255, 0.98);
+            border-radius: 15px;
+            padding: 2.5rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+            border-top: 5px solid #ffa500;
+        }
+
+        h2 {
+            color: #1e3c72;
+            font-size: 2.2rem;
+            margin-bottom: 1.5rem;
+            border-bottom: 4px solid #ffa500;
+            padding-bottom: 0.8rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        h3 {
+            color: #2a5298;
+            font-size: 1.6rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            margin-bottom: 1.2rem;
+            text-align: justify;
+            font-size: 1.15rem;
+            line-height: 1.8;
+        }
+
+        .highlight {
+            background: linear-gradient(90deg, #ffa500 0%, #ff6b6b 100%);
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: 8px;
+            font-weight: bold;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        .urgent-box {
+            background: #fff3cd;
+            border: 3px solid #ffa500;
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            text-align: center;
+            font-weight: bold;
+            color: #856404;
+            font-size: 1.2rem;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .service-card {
+            background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+            padding: 2rem;
+            border-radius: 15px;
+            border-left: 6px solid #2a5298;
+            border-top: 4px solid #ffa500;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-card::after {
+            content: "NUEVO";
+            position: absolute;
+            top: 10px;
+            right: -30px;
+            background: #ff0000;
+            color: white;
+            padding: 0.3rem 2.5rem;
+            transform: rotate(45deg);
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+
+        .service-card:hover {
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25);
+        }
+
+        .service-card h4 {
+            color: #1e3c72;
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+
+        .price-tag {
+            background: #28a745;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            display: inline-block;
+            margin-top: 1rem;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        .old-price {
+            text-decoration: line-through;
+            color: #999;
+            margin-right: 0.5rem;
+            font-size: 0.9rem;
+        }
+
+        ul {
+            margin-left: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        li {
+            margin-bottom: 0.8rem;
+            font-size: 1.1rem;
+            position: relative;
+        }
+
+        li::marker {
+            color: #ffa500;
+            font-size: 1.2rem;
+        }
+
+        /* CTA Principal */
+        .cta-main {
+            background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+            color: white;
+            padding: 2.5rem;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(40, 167, 69, 0.4);
+            margin: 2rem 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-main::before {
+            content: "";
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(45deg, transparent, rgba(255,255,255,0.3), transparent);
+            transform: rotate(45deg);
+            animation: shine 3s infinite;
+        }
+
+        @keyframes shine {
+            0% { transform: translateX(-100%) translateY(-100%) rotate(45deg); }
+            100% { transform: translateX(100%) translateY(100%) rotate(45deg); }
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: #fff;
+            color: #28a745;
+            padding: 1.2rem 3rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.3rem;
+            margin-top: 1rem;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+            transition: all 0.3s;
+            position: relative;
+            z-index: 1;
+        }
+
+        .cta-button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+        }
+
+        .phone-big {
+            font-size: 3rem;
+            font-weight: bold;
+            margin: 1rem 0;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            display: block;
+        }
+
+        .contact-box {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 3rem 2rem;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            border: 3px solid #ffa500;
+        }
+
+        .phone {
+            font-size: 2.8rem;
+            font-weight: bold;
+            margin: 1.5rem 0;
+            letter-spacing: 3px;
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+            color: #ffa500;
+        }
+
+        .guarantee {
+            background: rgba(255,255,255,0.1);
+            padding: 1rem;
+            border-radius: 10px;
+            margin-top: 1.5rem;
+            border: 2px dashed #ffa500;
+        }
+
+        .social-proof {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 15px;
+            margin: 2rem 0;
+            text-align: center;
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .stat-item {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #ffa500;
+            display: block;
+        }
+
+        footer {
+            background: rgba(0, 0, 0, 0.9);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+            border-top: 3px solid #ffa500;
+        }
+
+        .payment-methods {
+            margin: 1.5rem 0;
+            font-size: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 2rem; }
+            .offer-title { font-size: 2rem; }
+            .discount { font-size: 3.5rem; }
+            .phone-big { font-size: 2rem; }
+            .phone { font-size: 2rem; }
+            .container { padding: 0 1rem; }
+            .logo-container img { max-width: 200px; }
+            .new-badge { right: calc(50% - 100px); font-size: 0.7rem; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Banner de lanzamiento -->
+    <div class="launch-banner">
+        🎉 GRAN LANZAMIENTO 2026 - OFERTAS ESPECIALES DE APERTURA 🎉
+    </div>
+
+    <header>
+        <div class="logo-container">
+            <span class="new-badge">¡NUEVO!</span>
+            <img src="1000084180(1).jpg" alt="M&N Refrigeración - Logo oficial con símbolo de calor y frío">
+        </div>
+        <h1>M&N REFRIGERACIÓN</h1>
+        <p class="tagline">Expertos en Climatización y Refrigeración</p>
+    </header>
+
+    <div class="container">
+        <!-- Sección de oferta especial -->
+        <div class="offer-section">
+            <div class="offer-title">🔥 OFERTA DE LANZAMIENTO 🔥</div>
+            <span class="discount">30% OFF</span>
+            <div class="offer-details">
+                En tu primera instalación o servicio de mantenimiento<br>
+                <strong>Válido hasta agotar cupos</strong>
+            </div>
+            <div class="countdown">
+                ⏰ La oferta termina en:
+                <div class="countdown-timer" id="countdown">05:23:45:12</div>
+            </div>
+        </div>
+
+        <!-- CTA Principal -->
+        <div class="cta-main">
+            <h2 style="color: white; border: none; justify-content: center;">📞 LLAMA AHORA</h2>
+            <span class="phone-big">657-294-1067</span>
+            <p style="font-size: 1.3rem;">Atención inmediata las 24 horas del día</p>
+            <a href="tel:657-294-1067" class="cta-button">📱 LLAMAR GRATIS</a>
+        </div>
+
+        <div class="content-section">
+            <h2>🎯 Nuestra Responsabilidad</h2>
+            <p>
+                En <span class="highlight">M&N Refrigeración</span>, entendemos que la refrigeración y climatización son servicios esenciales para hogares y negocios. Por ello, asumimos con total <strong>responsabilidad</strong> cada proyecto que nos confían nuestros clientes.
+            </p>
+            
+            <div class="urgent-box">
+                ⚡ ¡PROMOCIÓN ESPECIAL DE LANZAMIENTO!<br>
+                Agenda tu diagnóstico GRATIS por tiempo limitado
+            </div>
+
+            <p>
+                Nuestro compromiso va más allá de la simple reparación o instalación. Nos responsabilizamos de:
+            </p>
+            <ul>
+                <li><strong>Diagnósticos precisos y honestos</strong> de cada equipo</li>
+                <li><strong>Trabajos de calidad garantizada</strong> con materiales certificados</li>
+                <li><strong>Cumplimiento de normas de seguridad</strong> y estándares de la industria</li>
+                <li><strong>Atención puntual y profesional</strong> en cada servicio</li>
+                <li><strong>Seguimiento post-servicio</strong> para asegurar su satisfacción</li>
+                <li><strong>Transparencia en precios</strong> y procesos de trabajo</li>
+            </ul>
+        </div>
+
+        <!-- Prueba social -->
+        <div class="social-proof">
+            <h2>🏆 Confían en Nosotros</h2>
+            <div class="stats">
+                <div class="stat-item">
+                    <span class="stat-number">500+</span>
+                    <span>Clientes satisfechos</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">10</span>
+                    <span>Años de experiencia</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">24/7</span>
+                    <span>Servicio de emergencia</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">100%</span>
+                    <span>Garantía en trabajos</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h2>📚 Capacitación Continua</h2>
+            <p>
+                El mundo de la refrigeración y climatización evoluciona constantemente. Los <span class="highlight">nuevos modelos de enfriamiento</span> en el mercado incorporan tecnologías más eficientes, ecológicas y sofisticadas. Por eso, en M&N Refrigeración mantenemos un programa permanente de <strong>capacitación continua</strong>.
+            </p>
+
+            <h3>🔧 Servicios con Descuento de Lanzamiento</h3>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h4>❄️ Instalación A/C</h4>
+                    <p>Instalación profesional de aires acondicionados split, ventana y central</p>
+                    <div class="price-tag">
+                        <span class="old-price">$800</span> DESDE $560
+                    </div>
+                </div>
+                <div class="service-card">
+                    <h4>🔧 Mantenimiento</h4>
+                    <p>Limpieza profunda, recarga de gas y revisión completa del sistema</p>
+                    <div class="price-tag">
+                        <span class="old-price">$150</span> DESDE $105
+                    </div>
+                </div>
+                <div class="service-card">
+                    <h4>🛠️ Reparación</h4>
+                    <p>Diagnóstico y reparación de fallas en cualquier marca o modelo</p>
+                    <div class="price-tag">
+                        <span class="old-price">$200</span> DESDE $140
+                    </div>
+                </div>
+                <div class="service-card">
+                    <h4>🏪 Refrigeración Comercial</h4>
+                    <p>Cámaras frías, vitrinas y equipos industriales</p>
+                    <div class="price-tag">
+                        <span class="old-price">$500</span> DESDE $350
+                    </div>
+                </div>
+            </div>
+
+            <h3>💡 Innovación al Servicio del Cliente</h3>
+            <p>
+                Gracias a nuestra capacitación continua, podemos ofrecer:
+            </p>
+            <ul>
+                <li>Asesoría experta en la <strong>selección del equipo ideal</strong> para sus necesidades</li>
+                <li>Instalación profesional de <strong>modelos de última generación</strong></li>
+                <li>Mantenimiento especializado que <strong>prolonga la vida útil</strong> de sus equipos</li>
+                <li>Reparación efectiva de <strong>cualquier marca o modelo</strong>, incluso los más recientes</li>
+                <li>Recomendaciones para <strong>optimizar el consumo energético</strong></li>
+            </ul>
+        </div>
+
+        <div class="contact-box">
+            <h2 style="color: white; border: none;">📞 Contáctanos Ahora</h2>
+            <p style="font-size: 1.3rem;">No dejes pasar esta oferta única de lanzamiento</p>
+            <div class="phone">657-294-1067</div>
+            <p style="font-size: 1.2rem;">
+                ✅ Atención inmediata las 24 horas<br>
+                ✅ Presupuestos sin compromiso<br>
+                ✅ Garantía total en todos nuestros trabajos
+            </p>
+            <div class="guarantee">
+                🛡️ GARANTÍA DE SATISFACCIÓN: Si no quedas satisfecho, ¡no pagas!
+            </div>
+            <div class="payment-methods">
+                💳 💵 🏦<br>
+                <span style="font-size: 1rem;">Aceptamos efectivo, tarjetas y transferencias</span>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p style="font-size: 1.2rem; margin-bottom: 1rem;">🚀 GRAN APERTURA 2026 🚀</p>
+        <p>&copy; 2026 M&N Refrigeración - Todos los derechos reservados</p>
+        <p>Expertos en Climatización | Capacitación Continua | Servicio Responsable</p>
+        <p style="margin-top: 1rem; color: #ffa500; font-weight: bold;">
+            ¡Llama ahora al 657-294-1067 y aprovecha el 30% de descuento!
+        </p>
+    </footer>
+
+    <script>
+        // Cuenta regresiva simple
+        function updateCountdown() {
+            const now = new Date();
+            const end = new Date();
+            end.setDate(end.getDate() + 5); // 5 días desde ahora
+            
+            const diff = end - now;
+            const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+            
+            document.getElementById('countdown').textContent = 
+                `${String(days).padStart(2, '0')}:${String(hours).padStart(2, '0')}:${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
+        }
+        
+        setInterval(updateCountdown, 1000);
+        updateCountdown();
+    </script>
+</body>
+</html>
